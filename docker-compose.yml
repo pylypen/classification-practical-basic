@@ -1,0 +1,20 @@
+version: '3.0'
+services:
+
+  jupyter:
+    build:
+      context: .
+      dockerfile: ./docker/jupyter/Dockerfile
+    container_name: jupyter-classification-practical
+    ports:
+      - 7777:8765
+    volumes:
+      - ./data:/home/playground
+    environment:
+      #GRANT_SUDO: "yes"
+      JUPYTER_ENABLE_LAB: "yes"
+      PASSWORD: "password"
+    # enable sudo permissions
+    user:
+      "root"
+    restart: always
