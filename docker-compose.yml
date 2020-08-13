@@ -7,7 +7,7 @@ services:
       dockerfile: ./docker/jupyter/Dockerfile
     container_name: jupyter-classification-practical
     ports:
-      - 7777:8765
+      - 7771:8765
     volumes:
       - ./data:/home/playground
     environment:
