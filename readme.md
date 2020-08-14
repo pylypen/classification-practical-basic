@@ -4,7 +4,7 @@
 - Start of containers `docker-compose up` or `docker-compose up -d` add ahead `sudo` for ubuntu/linux
 - Stop of containers `docker-compose down` add ahead `sudo` for ubuntu/linux
 - Checking logs `docker-compose logs --tal 25`
-- Navigate to http://localhost:7777
+- Navigate to http://localhost:7771
 - Password: `password`
 
 ###
